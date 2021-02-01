@@ -1,0 +1,27 @@
+body {
+  background-image: linear-gradient(to top right, #000046, #1cb5e0);
+  background-attachment: fixed;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+.row {
+  height: 80vh;
+}
+
+.app__sidebar {
+  height: 100%;
+  border: 3px black solid;
+}
+
+.app__main-content {
+  height: 100%;
+  border: 3px black solid;
+}

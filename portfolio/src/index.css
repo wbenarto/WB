@@ -1,6 +1,7 @@
 body {
   background-image: linear-gradient(to top right, #000046, #1cb5e0);
   background-attachment: fixed;
+  color: #354538;
 }
 
 code {
@@ -8,11 +9,11 @@ code {
     monospace;
 }
 
-.container {
+.app__container {
   padding-top: 50px;
 }
 
-.row {
+.app__row {
   height: 90vh;
 }
 
@@ -142,10 +143,11 @@ code {
 
 .about {
   padding: 20px;
+  margin: -35px;
 }
 
 .about__intro {
-  font-size: 1.1 rem;
+  font-size: 1.1rem;
   padding: 20px;
 }
 
@@ -157,11 +159,12 @@ code {
 .about__heading {
   font-size: 25px;
   font-weight: 700;
-  color: 354358;
+  color: #354358;
+  margin-left: 10px;
 }
 
 .skill-card {
-  background-color: #efff;
+  background-color: #fff;
   margin: 10px;
   padding: 10px;
   display: flex;
@@ -172,4 +175,19 @@ code {
 .skill-card__icon {
   width: 40px;
   height: 40px;
+}
+
+.skill-card-body {
+  margin-left: 15px;
+}
+
+.skill-card__content {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6e7e91;
+}
+
+.row__about {
+  height: 400px;
+  overflow-y: scroll;
 }

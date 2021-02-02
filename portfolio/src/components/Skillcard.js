@@ -10,8 +10,10 @@ const Skillcard = (props) => {
           alt="icon"
           className="skill-card__icon"
         ></img>
-        <h6 className="skill-card-title">{props.data.title}</h6>
-        <p className="skill-card__content">{props.data.about}</p>
+        <div className="skill-card-body">
+          <h6 className="skill-card-title">{props.data.title}</h6>
+          <p className="skill-card__content">{props.data.about}</p>
+        </div>
       </div>
     </div>
   );

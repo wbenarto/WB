@@ -5,11 +5,12 @@ const Navbar = (props) => {
   const [active, setActive] = useState("About");
 
   useEffect(() => {
-    let currentUrl = window.location.href;
+    const currentUrl = window.location.href;
     if (currentUrl.endsWith("/")) setActive("About");
-    else if (currentUrl.endsWith("/projects")) setActive("Projects");
-    else if (currentUrl.endsWith("/resume")) setActive("Resume");
-  }, [active]);
+    if (currentUrl.endsWith("/resume")) setActive("Resume");
+    if (currentUrl.endsWith("/projects")) setActive("Projects");
+  }, []);
+
   return (
     <div className="navbar">
       <div className="navbar__active">{active}</div>

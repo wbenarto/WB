@@ -13,15 +13,127 @@ code {
 }
 
 .row {
-  height: 80vh;
+  height: 90vh;
 }
 
-.app__sidebar {
-  height: 100%;
+/* sidebar */
+.sidebar {
+  background-color: white;
+  height: 95%;
   border: 3px black solid;
+  padding: 25px 15px;
+  box-shadow: 0 0 10px black;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .app__main-content {
-  height: 100%;
+  background-color: white;
+  height: 95%;
   border: 3px black solid;
+  padding: 25px 15px;
+  box-shadow: 0 0 10px black;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.sidebar__avatar {
+  height: 140px;
+  border-radius: 60px;
+  object-fit: contain;
+}
+
+.sidebar__icon {
+  width: 25px;
+  height: 25px;
+}
+
+.sidebar__name {
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.sidebar__name > span {
+  color: #eb5757d2;
+}
+
+.sidebar__item {
+  margin-bottom: 6px;
+  margin-top: 6px;
+  height: 40px;
+  font-size: 1.05rem;
+  border-radius: 30px;
+  justify-content: center;
+}
+
+.sidebar__title {
+  background-color: #f1f1f1;
+  border-radius: 30px;
+}
+
+.sidebar__location {
+  margin-top: 10px;
+}
+
+.sidebar__contact {
+  background-color: #dbdddf;
+  padding: 2px 0;
+  border-radius: 15px;
+
+  margin: 20px -15px;
+}
+
+.sidebar__email {
+  background-image: linear-gradient(to bottom left, #535388, #1cb5e0);
+  border-radius: 30px;
+  color: white;
+  margin: 15px 25px 20px;
+  cursor: pointer;
+  transition: all;
+  text-align: center;
+}
+
+.sidebar__email:hover {
+  transform: scale(1.1);
+}
+
+.sidebar__github:hover,
+.sidebar__resume:hover {
+  background-color: #f1f1f2;
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 991px) {
+  .app__main-content {
+    margin: 10px 15px;
+  }
+}
+
+/* Navbar */
+.navbar__items {
+  display: flex;
+}
+
+.navbar__active {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #354358;
+  border-bottom: 4px solid #1cb5e0;
+}
+
+.navbar__item {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #535388;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.navbar__item:hover {
+  background: -webkit-linear-gradient(#535388, #1cb5e0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

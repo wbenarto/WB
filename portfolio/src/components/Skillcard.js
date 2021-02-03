@@ -12,7 +12,7 @@ const Skillcard = (props) => {
         ></img>
         <div className="skill-card-body">
           <h6 className="skill-card-title">{props.data.title}</h6>
-          <p className="skill-card__content">{props.data.about}</p>
+          {/* <p className="skill-card__content">{props.data.about}</p> */}
         </div>
       </div>
     </div>

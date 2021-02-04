@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ProjectCard from "../components/ProjectCard";
-
+import { motion } from "framer-motion";
 import dataProjects from "../data/projects_data";
 
 const Projects = (props) => {
@@ -12,8 +12,32 @@ const Projects = (props) => {
     );
     setCategories(filtered);
   };
+
+  const project_variants = {
+    hidden: {
+      x: "200vh",
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        ease: "easeIn",
+        duration: 0.8,
+        delay: 0.2,
+        type: "spring",
+        bounce: 0.5,
+      },
+    },
+  };
+
   return (
-    <div className="container projects__container">
+    <motion.div
+      className="container projects"
+      variants={project_variants}
+      initial="hidden"
+      animate="visible"
+    >
       <div className="projects__navbar">
         <div
           className="projects__filter"
@@ -61,12 +85,12 @@ const Projects = (props) => {
           Full Stack
         </div>
       </div>
-      <div className="row">
+      <div className="row projects__row">
         {categories.map((e) => (
           <ProjectCard key={e.name} project={e} />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

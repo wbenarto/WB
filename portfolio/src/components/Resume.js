@@ -1,8 +1,32 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const resume_variants = {
+  hidden: {
+    y: "4000px",
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      ease: "easeIn",
+      duration: 0.8,
+      delay: 0.2,
+      type: "spring",
+      bounce: 0.5,
+    },
+  },
+};
 
 const Resume = (props) => {
   return (
-    <div className="container resume__container">
+    <motion.div
+      className="container resume__container"
+      variants={resume_variants}
+      initial="hidden"
+      animate="visible"
+    >
       <div className="row">
         <div className="col-lg-6 resume-card">
           <h4 className="resume-card__heading">Education</h4>
@@ -24,7 +48,7 @@ const Resume = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

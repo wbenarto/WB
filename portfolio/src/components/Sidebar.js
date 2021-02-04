@@ -5,14 +5,36 @@ import pin from "../assets/icons/pin.svg";
 import bio from "../assets/icons/bio.jpg";
 import linkedin from "../assets/icons/in.svg";
 import resume from "../assets/icons/William Benarto - 2021.pdf";
+import { motion } from "framer-motion";
 
 const Sidebar = () => {
   const handleEmailMe = () => {
     window.open("mailto:w.benarto@gmail.com");
   };
 
+  const sidebar_variants = {
+    hidden: {
+      x: "-100vh",
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        delay: 0.2,
+        duration: 1.2,
+        type: "spring",
+      },
+    },
+  };
+
   return (
-    <div className="sidebar">
+    <motion.div
+      className="sidebar"
+      variants={sidebar_variants}
+      initial="hidden"
+      animate="visible"
+    >
       <img src={bio} alt="avatar" className="sidebar__avatar"></img>
       <div className="sidebar__name">
         William
@@ -55,7 +77,7 @@ const Sidebar = () => {
       <div className="sidebar__item sidebar__email" onClick={handleEmailMe}>
         Email Me
       </div>
-    </div>
+    </motion.div>
   );
 };
 

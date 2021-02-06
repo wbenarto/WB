@@ -1,4 +1,5 @@
 import React from "react";
+import Canvas from "./Canvas";
 import { motion } from "framer-motion";
 
 const resume_variants = {
@@ -27,6 +28,7 @@ const Resume = (props) => {
       initial="hidden"
       animate="visible"
     >
+      <Canvas />
       <div className="row">
         <div className="col-lg-6 resume-card">
           <h4 className="resume-card__heading">Education</h4>

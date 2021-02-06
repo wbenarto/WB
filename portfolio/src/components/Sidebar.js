@@ -40,21 +40,24 @@ const Sidebar = () => {
         William
         <span>Benarto</span>
       </div>
-      <div className="sidebar__item sidebar__title">Web Developer</div>
-      <a href={resume} download="resume.pdf">
+      <div className="sidebar__title">Full Stack Web Developer</div>
+      <a href={resume} className="sidebar__resume__link" download="resume.pdf">
         <div className="sidebar__item sidebar__resume">
           <img src="" alt="" className="sidebar_icon"></img>Download Resume
         </div>
       </a>
       <figure className="sidebar__social-icons">
-        <a href="#">
+        <a
+          className="sidebar__a"
+          href="https://www.linkedin.com/in/william-benarto/"
+        >
           <img
             src={linkedin}
             alt="linkedIn"
             className="sidebar__icon mr-3"
           ></img>
         </a>
-        <a href="#">
+        <a className="sidebar__a" href="https://github.com/wbenarto">
           <img src={github} alt="github" className="sidebar__icon mr-3"></img>
         </a>
         {/* <a href="">
@@ -68,7 +71,11 @@ const Sidebar = () => {
           </a>
         </div> */}
         <div className="sidebar__location">
-          <img src={pin} alt="location" className="sidebar__icon mr-2"></img>
+          <img
+            src={pin}
+            alt="location"
+            className="sidebar__icon sidebar__icon__location mr-2"
+          ></img>
           San Francisco, CA 94122
         </div>
         <div className="sidebar__item">w.benarto@gmail.com</div>

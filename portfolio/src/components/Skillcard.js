@@ -3,7 +3,7 @@ import React from "react";
 const Skillcard = (props) => {
   console.log();
   return (
-    <div className="col-lg-6">
+    <div className="">
       <div className="skill-card">
         <img
           src={props.data.icon}

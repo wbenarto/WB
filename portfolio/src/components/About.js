@@ -27,18 +27,13 @@ const about_variants = {
 
 const skills = [
   {
+    icon: node,
+    title: "Node.js",
+    about: "Advance Javascript Knowledge yeehaw",
+  },
+  {
     icon: javascript,
-    title: "Javascript",
-    about: "Advance Javascript Knowledge yeehaw",
-  },
-  {
-    icon: react,
-    title: "HTML5",
-    about: "Advance Javascript Knowledge yeehaw",
-  },
-  {
-    icon: react,
-    title: "CSS3",
+    title: "Express",
     about: "Advance Javascript Knowledge yeehaw",
   },
   {
@@ -57,30 +52,25 @@ const skills = [
     about: "Advance Javascript Knowledge yeehaw",
   },
   {
-    icon: node,
-    title: "Node.js",
-    about: "Advance Javascript Knowledge yeehaw",
-  },
-  {
     icon: javascript,
-    title: "Express",
+    title: "Restful API",
     about: "Advance Javascript Knowledge yeehaw",
   },
 ];
 const languages = [
   {
-    icon: javascript,
-    title: "MySQL",
+    icon: react,
+    title: "HTML5",
+    about: "Advance Javascript Knowledge yeehaw",
+  },
+  {
+    icon: react,
+    title: "CSS3",
     about: "Advance Javascript Knowledge yeehaw",
   },
   {
     icon: javascript,
-    title: "MongoDB",
-    about: "Advance Javascript Knowledge yeehaw",
-  },
-  {
-    icon: javascript,
-    title: "Restful API",
+    title: "Javascript",
     about: "Advance Javascript Knowledge yeehaw",
   },
   {
@@ -91,6 +81,16 @@ const languages = [
   {
     icon: javascript,
     title: "Java",
+    about: "Advance Javascript Knowledge yeehaw",
+  },
+  {
+    icon: javascript,
+    title: "MySQL",
+    about: "Advance Javascript Knowledge yeehaw",
+  },
+  {
+    icon: javascript,
+    title: "MongoDB",
     about: "Advance Javascript Knowledge yeehaw",
   },
 ];
@@ -111,19 +111,19 @@ const About = (props) => {
       </h6>
       <div className="about__container">
         <div className="row about__list">
-          <div className="col-sm row__about ">
-            <h6 className="about__heading">Frameworks</h6>
+          <div className="col-sm row__about">
+            <h6 className="about__heading">Languages</h6>
             <div className="row row__about__skills">
-              {skills.map((e) => (
+              {languages.map((e) => (
                 <Skillcard className="col-sm" data={e} />
               ))}
             </div>
           </div>
 
-          <div className="col-sm row__about">
-            <h6 className="about__heading">Languages</h6>
+          <div className="col-sm row__about ">
+            <h6 className="about__heading">Frameworks</h6>
             <div className="row row__about__skills">
-              {languages.map((e) => (
+              {skills.map((e) => (
                 <Skillcard className="col-sm" data={e} />
               ))}
             </div>

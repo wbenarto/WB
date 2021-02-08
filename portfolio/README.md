@@ -1,3 +1,4 @@
+Checkout my portfolio!
 [http://wbenarto.github.io/WB/]
 
 # Getting Started with Create React App

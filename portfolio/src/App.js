@@ -23,7 +23,7 @@ function App() {
             <div className="col-lg-9 app__main-content">
               <Navbar />
               <Switch>
-                <Route exact path="/wb">
+                <Route exact path="/">
                   <About />
                 </Route>
                 <Route path="/resume">

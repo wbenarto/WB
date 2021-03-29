@@ -16,7 +16,7 @@ export const HeroTitle = styled.div`
   /* 
   background-color: pink; */
   margin-top: 200px;
-  padding-bottom: 40px;
+  padding-bottom: 120px;
   font-size: 80px;
   font-family: "Roboto";
   text-align: center;
@@ -32,9 +32,13 @@ export const HeroDesc = styled.div`
   align-items: center;
 
   > p {
-    width: 360px;
-    height: 50%;
-    background-color: white;
+    width: 300px;
+    height: 100%;
+    background-color: #4bbf68;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
     text-align: center;
     border: 1px black solid;
     border-radius: 30px;

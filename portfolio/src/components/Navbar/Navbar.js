@@ -30,35 +30,37 @@ const Navbar = (props) => {
   };
 
   return (
-    <NavbarContainer>
-      <NavbarLogo className="navbar__active">William Benarto</NavbarLogo>
+    <>
+      <NavbarContainer>
+        <NavbarLogo>William Benarto</NavbarLogo>
 
-      <NavLinks>
-        <Link
-          style={{ textDecoration: "none" }}
-          to="/"
-          onClick={() => setActive("Work")}
-        >
-          <NavbarItem>Work</NavbarItem>
-        </Link>
+        <NavLinks>
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/"
+            onClick={() => setActive("Work")}
+          >
+            <NavbarItem>Work</NavbarItem>
+          </Link>
 
-        <Link
-          style={{ textDecoration: "none" }}
-          to="/information"
-          onClick={() => setActive("Information")}
-        >
-          <NavbarItem>Information</NavbarItem>
-        </Link>
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/information"
+            onClick={() => setActive("Information")}
+          >
+            <NavbarItem>Information</NavbarItem>
+          </Link>
 
-        <Link
-          style={{ textDecoration: "none" }}
-          to="/contact"
-          onClick={() => setActive("Contact")}
-        >
-          <NavbarItem>Contact</NavbarItem>
-        </Link>
-      </NavLinks>
-    </NavbarContainer>
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/contact"
+            onClick={() => setActive("Contact")}
+          >
+            <NavbarItem>Contact</NavbarItem>
+          </Link>
+        </NavLinks>
+      </NavbarContainer>
+    </>
   );
 };
 

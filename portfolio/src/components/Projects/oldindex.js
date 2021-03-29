@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../ProjectCard";
 import { motion } from "framer-motion";
-import dataProjects from "../data/projects_data";
+import dataProjects from "../../data/projects_data";
 
 const Projects = (props) => {
   const [categories, setCategories] = useState(dataProjects);

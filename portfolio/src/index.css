@@ -1,6 +1,9 @@
 body {
   /* background-image: linear-gradient(to top right, #000046, #1cb5e0); */
   background-attachment: fixed;
+  top: 0;
+  left: 0;
+
   /* color: #354538; */
 }
 

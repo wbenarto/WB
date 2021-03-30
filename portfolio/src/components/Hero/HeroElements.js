@@ -20,6 +20,12 @@ export const HeroTitle = styled.div`
   font-size: 80px;
   font-family: "Roboto";
   text-align: center;
+
+  @media screen and (max-width: 475px) {
+    font-size: 40px;
+    margin-top: 140px;
+    padding-bottom: 40px;
+  }
 `;
 
 export const HeroDesc = styled.div`
@@ -34,11 +40,11 @@ export const HeroDesc = styled.div`
   > p {
     width: 300px;
     height: 100%;
-    background-color: #4bbf68;
+    /* background-color: #4bbf68; */
     align-items: center;
     display: flex;
     justify-content: center;
-    color: #ffffff;
+    color: black;
     text-align: center;
     border: 1px black solid;
     border-radius: 30px;
@@ -46,6 +52,10 @@ export const HeroDesc = styled.div`
     font-size: 20px;
     padding: 0 20px;
     margin: 0 20px;
+
+    @media screen and (max-width: 475px) {
+      font-size: 12px;
+    }
   }
 `;
 

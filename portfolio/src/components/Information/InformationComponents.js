@@ -24,8 +24,8 @@ export const InfoHeader = styled.div`
 `;
 
 export const InfoHeaderImage = styled.img`
-  margin-top: 40px;
-  width: 50%;
+  margin-top: 60px;
+  width: 60%;
   border-radius: 20px;
 `;
 

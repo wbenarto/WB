@@ -11,7 +11,6 @@ import {
 } from "react-router-dom";
 
 import Information from "./components/Information";
-// import Projects from "./components/Projects";
 
 function App() {
   return (

@@ -9,7 +9,7 @@ import liri from "../assets/projects/liri.png";
 import trivia from "../assets/projects/trivia.png";
 import clicky from "../assets/projects/clicky.png";
 
-const data_projects = [
+export const data_projects = [
   {
     name: "Covid 19 Tracker",
     image: covid,
@@ -89,4 +89,54 @@ const data_projects = [
   },
 ];
 
-export default data_projects;
+export const projects = [
+  {
+    title: "Webesushi.io",
+    headline: "Sushi made simple for everyone",
+    desc:
+      "A web app created to share my love and passion for sushi. This site provides recipes, in-depth sushi-how-to guides for new users, and information about sustainable sushi ingredients. This site will also help people who wants to work in the sushi industry by providing beginner Food Safety courses for free.",
+    tech: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React",
+      "Redux",
+      "Express",
+      "Firebase",
+    ],
+    images: sushi,
+    github: "https://github.com/wbenarto/WB_Landing/tree/master/landing",
+    deployed_url: "Webesushi.io",
+  },
+  {
+    title: "Webesushi/sustainability",
+    headline:
+      "Increase awareness to the global overfishing crises in sushi products.",
+    desc:
+      "App to learn more about sustainability in sushi. We take a look at most fishes that are being used in sushi all around the world then categorized by following guides from Monterey Bay Aquarium Research. ",
+    tech: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React",
+      "Redux",
+      "API",
+      "Express",
+      "Firebase",
+    ],
+    images: calculator,
+    github: "https://github.com/wbenarto/WB_Landing/tree/master/landing",
+    deployed_url: "Webesushi.io",
+  },
+  {
+    title: "BayArea Harvesting App",
+    headline:
+      "Tide-Chart, Open Fishing Season, Tips, Limits and Regulations for seafood harvesting in the Bay Area.",
+    desc:
+      "Web-App for harvesting in bay area. Information includes tide chart for each location, limit per person, what is sustainable to harvest.",
+    tech: ["HTML", "CSS", "Python", "Django", "API", "Mongo"],
+    images: calculator,
+    github: "in progress",
+    deployed_url: "in progress",
+  },
+];

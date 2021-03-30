@@ -20,6 +20,12 @@ export const NavbarLogo = styled.div`
   font-family: "Roboto";
   font-size: 28px;
   align-items: center;
+
+  @media screen and (max-width: 475px) {
+    font-size: 14px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
 `;
 
 export const NavLinks = styled.div`
@@ -33,6 +39,10 @@ export const NavLinks = styled.div`
   position: relative;
   flex-direction: row;
   justify-content: space-between;
+
+  @media screen and (max-width: 475px) {
+    margin-top: 0;
+  }
 `;
 export const NavbarItem = styled.div`
   width: 100%;
@@ -45,4 +55,9 @@ export const NavbarItem = styled.div`
 
   align-items: center;
   justify-content: flex-end;
+
+  @media screen and (max-width: 475px) {
+    font-size: 14px;
+    padding: 5px;
+  }
 `;

@@ -9,6 +9,11 @@ export const HeroContainer = styled.div`
   margin-top: 40px;
   padding-bottom: 80px;
   border-bottom: 1px solid black;
+
+  @media screen and (max-width: 475px) {
+    height: 40vh;
+    margin-bottom: 40px;
+  }
 `;
 
 export const HeroTitle = styled.div`
@@ -54,7 +59,10 @@ export const HeroDesc = styled.div`
     margin: 0 20px;
 
     @media screen and (max-width: 475px) {
-      font-size: 12px;
+      font-size: 8px;
+      width: 100%;
+      height: 20px;
+      padding: 0;
     }
   }
 `;

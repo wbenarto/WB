@@ -21,12 +21,23 @@ export const InfoHeader = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 475px) {
+    margin-top: 0px;
+    width: 90%;
+    height: 600px;
+  }
 `;
 
 export const InfoHeaderImage = styled.img`
   margin-top: 60px;
   width: 60%;
   border-radius: 20px;
+
+  @media screen and (max-width: 475px) {
+    width: 100%;
+    margin-top: 0px;
+  }
 `;
 
 export const InfoHeading = styled.p`
@@ -35,6 +46,11 @@ export const InfoHeading = styled.p`
   font-family: "Roboto";
   width: 70vw;
   text-align: center;
+
+  @media screen and (max-width: 678px) {
+    font-size: 28px;
+    margin-top: 60px;
+  }
 `;
 
 export const InfoDetail = styled.p`
@@ -42,6 +58,11 @@ export const InfoDetail = styled.p`
   font-family: "Roboto Mono";
   font-size: 20px;
   width: 40vw;
+
+  @media screen and (max-width: 475px) {
+    width: 100%;
+    font-size: 14px;
+  }
 `;
 
 export const InfoMain = styled.div`
@@ -55,6 +76,11 @@ export const InfoMain = styled.div`
   align-items: center;
   flex-direction: column;
   /* background-color: yellow; */
+
+  @media screen and (max-width: 475px) {
+    margin-top: 0px;
+    width: 100%;
+  }
 `;
 
 export const InfoSkills = styled.div`
@@ -67,6 +93,12 @@ export const InfoSkills = styled.div`
   /* background-color: black; */
   font-family: "Roboto Mono";
   font-size: 20px;
+
+  @media screen and (max-width: 475px) {
+    margin-top: 20px;
+    font-size: 16px;
+    width: 100%;
+  }
 `;
 
 export const InfoLanguages = styled.div`
@@ -78,6 +110,7 @@ export const InfoLanguages = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  border-right: 1px solid black;
 
   > p {
     height: 1.2rem;
@@ -89,6 +122,12 @@ export const InfoLanguages = styled.div`
     padding: 10px 50px;
     margin-left: 50px;
     margin-right: 50px;
+    @media screen and (max-width: 475px) {
+      font-size: 14px;
+      height: 0.5rem;
+      background-color: white;
+      margin: 10px 10px;
+    }
   }
 `;
 
@@ -111,6 +150,13 @@ export const InfoFrameworks = styled.div`
     padding: 10px 50px;
     margin-left: 50px;
     margin-right: 50px;
+
+    @media screen and (max-width: 475px) {
+      font-size: 14px;
+      height: 0.5rem;
+      background-color: white;
+      margin: 10px 10px;
+    }
   }
 `;
 
@@ -127,4 +173,9 @@ export const InfoButton = styled.div`
   color: white;
   font-family: "Roboto Mono";
   font-size: 28px;
+
+  @media screen and (max-width: 475px) {
+    height: 40px;
+    font-size: 20px;
+  }
 `;

@@ -4,7 +4,7 @@ export const ProjectsContainer = styled.div`
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  height: 95vh;
+  height: 100%;
   /* background-color: teal; */
   flex-direction: row;
   display: flex;
@@ -14,19 +14,24 @@ export const ProjectsContainer = styled.div`
   overflow: hidden;
   @media screen and (max-width: 475px) {
     flex-direction: column;
+    margin-bottom: 20px;
   }
 `;
 
 export const ProjectsImage = styled.img`
-  width: 50%;
-  height: 80%;
-  background-color: lightblue;
+  width: 40%;
+  height: 600px;
+
+  /* background-color: lightblue; */
   display: flex;
   position: relative;
   margin-left: 80px;
 
   @media screen and (max-width: 475px) {
     margin-left: 0px;
+    margin-top: 20px;
+    width: 90%;
+    height: 200px;
   }
 `;
 
@@ -38,10 +43,11 @@ export const ProjectsInfo = styled.div`
   position: relative;
   flex-direction: column;
 
-  margin: 160px 0px 80px 80px;
+  margin: 40px 80px 80px 80px;
 
   @media screen and (max-width: 475px) {
-    margin-top: 0px;
+    margin: 20px 0px 0px 0px;
+    width: 90%;
   }
 `;
 
@@ -55,7 +61,10 @@ export const ProjectsTitle = styled.h1`
 export const ProjectsHeadline = styled.p`
   font-family: "Roboto";
   font-size: 48px;
-  margin-right: 40px;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
   @media screen and (max-width: 475px) {
     margin: 0;
     font-size: 24px;
@@ -65,19 +74,19 @@ export const ProjectsHeadline = styled.p`
 export const ProjectsDetail = styled.p`
   font-family: "Roboto Mono";
   font-size: 20px;
-  margin-bottom: 40px;
-  margin-right: 40px;
+  margin-bottom: 80px;
 
   @media screen and (max-width: 475px) {
     margin: 0;
     font-size: 14px;
+    margin-top: 20px;
   }
 `;
 
 export const ProjectsButton = styled.div`
   font-family: "Roboto Mono";
   font-size: 20px;
-  width: 50%;
+  width: 100%;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -88,13 +97,13 @@ export const ProjectsButton = styled.div`
   border-radius: 20px;
 
   @media screen and (max-width: 475px) {
-    margin: 0;
+    margin-top: 40px;
     font-size: 14px;
   }
 `;
 
 export const ProjectsTechs = styled.div`
-  width: 80%;
+  width: 100%;
   height: 40px;
   /* background-color: green; */
   flex-direction: row;
@@ -110,6 +119,7 @@ export const ProjectsTechs = styled.div`
 
     @media screen and (max-width: 475px) {
       margin: 0;
+
       font-size: 0.5rem;
     }
   }

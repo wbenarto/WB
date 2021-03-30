@@ -9,7 +9,7 @@ export const FooterContainer = styled.div`
 
   @media screen and (max-width: 475px) {
     height: 50px;
-    background-color: teal;
+    /* background-color: teal; */
   }
 `;
 

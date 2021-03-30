@@ -45,7 +45,7 @@ const index = () => {
               <p>MySQL</p>
             </InfoLanguages>
             <InfoFrameworks>
-              Frameworks and Libraries
+              Frameworks
               <br />
               <br />
               <p>Express</p>
@@ -60,7 +60,6 @@ const index = () => {
           </InfoButton>
         </InfoMain>
       </InformationContainer>
-      ;
     </>
   );
 };

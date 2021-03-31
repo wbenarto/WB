@@ -8,6 +8,7 @@ import {
   ProjectsDetail,
   ProjectsButton,
   ProjectsTechs,
+  ProjectSite,
 } from "./ProjectsElements";
 
 const index = (props) => {
@@ -16,10 +17,17 @@ const index = (props) => {
     <ProjectsContainer>
       <ProjectsImage src={props.project.images}></ProjectsImage>
       <ProjectsInfo>
-        <ProjectsTitle>{props.project.title}</ProjectsTitle>
+        <a href={props.project.deployed_url}>
+          {" "}
+          <ProjectsTitle>{props.project.title}</ProjectsTitle>
+        </a>
         <ProjectsHeadline>{props.project.headline}</ProjectsHeadline>
         <ProjectsDetail>- {props.project.desc}</ProjectsDetail>
-        <ProjectsButton>Show Github Repo</ProjectsButton>
+        {/* <ProjectSite src={web} /> */}
+        <a href={props.project.github}>
+          <ProjectsButton>Show Github Repo</ProjectsButton>
+        </a>
+
         <ProjectsTechs>
           {props.project.tech.map((e) => (
             <p>{e}</p>

@@ -45,6 +45,10 @@ export const ProjectsInfo = styled.div`
 
   margin: 40px 80px 80px 80px;
 
+  > a {
+    text-decoration: none;
+    color: black;
+  }
   @media screen and (max-width: 475px) {
     margin: 20px 0px 0px 0px;
     width: 90%;
@@ -53,9 +57,9 @@ export const ProjectsInfo = styled.div`
 
 export const ProjectsTitle = styled.h1`
   font-size: 20px;
-  width: 180px;
   font-family: "Roboto Mono";
   border-bottom: 0.5px solid black;
+  text-decoration: none;
 `;
 
 export const ProjectsHeadline = styled.p`
@@ -96,6 +100,10 @@ export const ProjectsButton = styled.div`
   border: 1px black solid;
   border-radius: 20px;
 
+  > a {
+    text-decoration: none;
+    color: black;
+  }
   @media screen and (max-width: 475px) {
     margin-top: 40px;
     font-size: 14px;
@@ -123,4 +131,11 @@ export const ProjectsTechs = styled.div`
       font-size: 0.5rem;
     }
   }
+`;
+
+export const ProjectSite = styled.img`
+  width: 50px;
+  height: 50px;
+  color: black;
+  font-size: 1rem;
 `;

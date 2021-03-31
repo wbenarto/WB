@@ -8,6 +8,9 @@ export const NavbarContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  > a {
+    text-decoration: none;
+  }
 `;
 export const NavbarLogo = styled.div`
   height: 3vh;
@@ -20,6 +23,7 @@ export const NavbarLogo = styled.div`
   font-family: "Roboto";
   font-size: 28px;
   align-items: center;
+  text-decoration: none;
 
   @media screen and (max-width: 475px) {
     font-size: 14px;
@@ -40,6 +44,9 @@ export const NavLinks = styled.div`
   flex-direction: row;
   justify-content: space-between;
 
+  > a {
+    text-decoration: none;
+  }
   @media screen and (max-width: 475px) {
     margin-top: 0;
   }

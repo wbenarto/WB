@@ -92,7 +92,7 @@ import sushi from "../assets/projects/sushi.JPG";
 export const projects = [
   {
     title: "Webesushi.io",
-    headline: "Sushi made simple for everyone",
+    headline: "Sushi made simple",
     desc:
       "A web app created to share my love and passion for sushi. This site provides recipes, in-depth sushi-how-to guides for new users, and information about sustainable sushi ingredients. This site will also help people who wants to work in the sushi industry by providing beginner Food Safety courses for free.",
     tech: [
@@ -106,10 +106,10 @@ export const projects = [
     ],
     images: sushi,
     github: "https://github.com/wbenarto/WB_Landing/tree/master/landing",
-    deployed_url: "Webesushi.io",
+    deployed_url: "https://www.webesushi.io",
   },
   {
-    title: "Webesushi/sustainability",
+    title: "Webesushi/Sustainability",
     headline:
       "Increase awareness to the global overfishing crises in sushi products.",
     desc:
@@ -126,7 +126,7 @@ export const projects = [
     ],
     images: sushi,
     github: "https://github.com/wbenarto/WB_Landing/tree/master/landing",
-    deployed_url: "Webesushi.io",
+    deployed_url: "www.webesushi.io",
   },
   {
     title: "Clean Harvest",
@@ -135,7 +135,7 @@ export const projects = [
       "Tide-Chart, Open Fishing Season Tips, Limits and Regulations for seafood harvesting in the Bay Area.",
     tech: ["HTML", "CSS", "Python", "Django", "API", "Mongo"],
     images: sushi,
-    github: "in progress",
-    deployed_url: "in progress",
+    github: "https://www.webesushi.io",
+    deployed_url: "https://www.webesushi.io",
   },
 ];

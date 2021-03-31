@@ -9,15 +9,6 @@ import {
 } from "./NavbarElements";
 
 const Navbar = (props) => {
-  const [active, setActive] = useState("About");
-
-  useEffect(() => {
-    const currentUrl = window.location.href;
-    if (currentUrl.endsWith("/")) setActive("About");
-    if (currentUrl.endsWith("/resume")) setActive("Resume");
-    if (currentUrl.endsWith("/projects")) setActive("Projects");
-  }, [active]);
-
   const navbar_variant = {
     hidden: {
       y: "-30vh",
@@ -32,29 +23,28 @@ const Navbar = (props) => {
   return (
     <>
       <NavbarContainer>
-        <NavbarLogo>William Benarto</NavbarLogo>
+        <Link to="/">
+          <NavbarLogo>William Benarto</NavbarLogo>
+        </Link>
 
         <NavLinks>
           <Link
-            style={{ textDecoration: "none" }}
             to="/"
-            onClick={() => setActive("Work")}
+            // onClick={() => setActive("Work")}
           >
             <NavbarItem>Work</NavbarItem>
           </Link>
 
           <Link
-            style={{ textDecoration: "none" }}
             to="/information"
-            onClick={() => setActive("Information")}
+            // onClick={() => setActive("Information")}
           >
             <NavbarItem>Information</NavbarItem>
           </Link>
 
           <Link
-            style={{ textDecoration: "none" }}
             to="/contact"
-            onClick={() => setActive("Contact")}
+            // onClick={() => setActive("Contact")}
           >
             <NavbarItem>Contact</NavbarItem>
           </Link>

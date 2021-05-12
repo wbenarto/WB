@@ -14,6 +14,9 @@ import {
 import webe from "../../assets/icons/webe2sm.jpg";
 
 const index = () => {
+  const handleEmailMe = () => {
+    window.open("mailto:w.benarto@gmail.com");
+  };
   return (
     <>
       <InformationContainer>
@@ -41,8 +44,8 @@ const index = () => {
               <p>CSS3</p>
               <p>Javascript</p>
               <p>Node.js</p>
-              <p>Python</p>
               <p>MySQL</p>
+              <p>MongoDB</p>
             </InfoLanguages>
             <InfoFrameworks>
               Frameworks
@@ -51,11 +54,10 @@ const index = () => {
               <p>Express</p>
               <p>React</p>
               <p>Redux</p>
-              <p>Django</p>
               <p>Firebase</p>
             </InfoFrameworks>
           </InfoSkills>
-          <InfoButton>
+          <InfoButton onClick={handleEmailMe}>
             <p>Say Hello</p>
           </InfoButton>
         </InfoMain>

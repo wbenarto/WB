@@ -27,9 +27,12 @@ const index = () => {
             engineer.
           </InfoHeading>
           <InfoDetail>
-            Experienced in building responsive web-apps through React, HTML, and
-            CSS, developed robust REST API using Django-rest api. Passionate in
-            helping and educating others in technology.
+            Enthusiastic web developer with 3+ years of programming experience
+            building websites and web applications that provides intuitive user
+            interface. Seeking a rewarding career opportunity to dedicate myself
+            as a full-time web developer to continue learning and growing while
+            putting in the effort to achieve the company’s goal. Experienced in
+            building responsive web-apps through React, HTML, and CSS.
           </InfoDetail>
         </InfoHeader>
         <InfoMain>

@@ -47,6 +47,7 @@ const index = () => {
               <p>CSS3</p>
               <p>Javascript</p>
               <p>Node.js</p>
+              <p>Python</p>
               <p>MySQL</p>
               <p>MongoDB</p>
             </InfoLanguages>

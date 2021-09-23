@@ -19,9 +19,9 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const ProjectsImage = styled.img`
-  width: 40%;
-  height: 600px;
-  object-fit: cover;
+  min-width: 40%;
+  height: 400px;
+  object-fit: contain;
 
   /* background-color: lightblue; */
   display: flex;

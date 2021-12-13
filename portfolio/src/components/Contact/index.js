@@ -1,24 +1,32 @@
 import React from "react";
-import { ContactContainer, ContactContent } from "./ContactElements";
 import {
-  ProjectsTitle,
-  ProjectsHeadline,
-  ProjectsDetail,
-  ProjectsButton,
-} from "../Projects/ProjectsElements";
-
+  ContactContainer,
+  ContactContent,
+  ContactHeadline,
+  EmailButton,
+} from "./ContactElements";
+import { ProjectsTitle } from "../Projects/ProjectsElements";
+import { InfoDetail } from "../Information/InformationComponents";
 const index = () => {
+  const handleEmailMe = () => {
+    window.open("mailto:w.benarto@gmail.com");
+  };
   return (
-    <div>
-      <ContactContainer>
+    <>
+      <ContactContainer id="contact">
         <ContactContent>
           <ProjectsTitle>Contact Me</ProjectsTitle>
-          <ProjectsHeadline>Let's build a better future❤️</ProjectsHeadline>
+
+          <ContactHeadline>Let's build a better future❤️</ContactHeadline>
+          <InfoDetail>Currently looking for new opportunities. </InfoDetail>
+          <EmailButton onClick={handleEmailMe}>
+            <p>Say Hello</p>
+          </EmailButton>
           {/* <ProjectsDetail>Contact Us</ProjectsDetail>
           <ProjectsButton>Contact Us</ProjectsButton> */}
         </ContactContent>
       </ContactContainer>
-    </div>
+    </>
   );
 };
 

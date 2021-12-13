@@ -1,56 +1,90 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { animateScroll as scroll } from "react-scroll";
 import {
   NavbarContainer,
   NavbarLogo,
   NavLinks,
+  NavLink,
   NavbarItem,
+  ResumeButton,
+  Transition,
 } from "./NavbarElements";
 
 const Navbar = (props) => {
-  const navbar_variant = {
-    hidden: {
-      y: "-30vh",
-      opacity: 0,
-    },
-    visible: {
-      y: 0,
-      opacity: 1,
-    },
+  const [scrollDown, setScrollDown] = useState(false);
+
+  let lastScrollTop = 0;
+
+  const handleScroll = () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop <= lastScrollTop || scrollTop <= 140) {
+      setScrollDown(true);
+    } else {
+      setScrollDown(false);
+    }
+    lastScrollTop = scrollTop;
+  };
+
+  useEffect(() => {
+    setScrollDown(true);
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
   };
 
   return (
-    <>
-      <NavbarContainer>
-        <Link to="/">
-          <NavbarLogo>William Benarto</NavbarLogo>
+    <Transition>
+      <NavbarContainer className={scrollDown ? "active" : "hidden"}>
+        <Link to="/" onClick={toggleHome}>
+          <NavbarLogo>WB</NavbarLogo>
         </Link>
 
         <NavLinks>
-          <Link
-            to="/"
-            // onClick={() => setActive("Work")}
+          <NavLink
+            to="information"
+            smooth={true}
+            duration={800}
+            spy={true}
+            exact="true"
+            offset={-60}
           >
-            <NavbarItem>Work</NavbarItem>
-          </Link>
+            <NavbarItem>01. About</NavbarItem>
+          </NavLink>
 
-          <Link
-            to="/information"
-            // onClick={() => setActive("Information")}
+          <NavLink
+            to="work"
+            smooth={true}
+            duration={800}
+            spy={true}
+            exact="true"
+            offset={-60}
           >
-            <NavbarItem>Information</NavbarItem>
-          </Link>
+            <NavbarItem>02. Work</NavbarItem>
+          </NavLink>
 
-          <Link
-            to="/contact"
-            // onClick={() => setActive("Contact")}
+          <NavLink
+            to="contact"
+            smooth={true}
+            duration={800}
+            spy={true}
+            exact="true"
+            // offset={80}
           >
-            <NavbarItem>Contact</NavbarItem>
-          </Link>
+            <NavbarItem>03. Contact</NavbarItem>
+          </NavLink>
         </NavLinks>
+        <ResumeButton
+          href="https://drive.google.com/file/d/1W9Gy3TF4XhgUQlis3_w9KvTQ9UrfR8kG/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </ResumeButton>
       </NavbarContainer>
-    </>
+    </Transition>
   );
 };
 

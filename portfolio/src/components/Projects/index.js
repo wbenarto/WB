@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import {
+  ProjectContainer,
   ProjectsContainer,
   ProjectsImage,
   ProjectsInfo,
@@ -10,32 +11,110 @@ import {
   ProjectsTechs,
   ProjectSite,
 } from "./ProjectsElements";
+import { InfoDetail, InfoHeading } from "../Information/InformationComponents";
+import { FaEye, FaGasPump } from "react-icons/fa";
+import { projects } from "../../data/projects_data";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
-const index = (props) => {
-  console.log(props.project.images);
+const Projects = (props) => {
+  let t1 = gsap.timeline();
+  const infoRef = useRef();
+  const imgRef = useRef();
+  const revealRefs = useRef([]);
+  revealRefs.current = [];
+
+  useEffect(() => {
+    console.log("useEffect here gsap");
+
+    revealRefs.current.forEach((e, i) => {
+      gsap.from(e, {
+        duration: 1,
+        opacity: 0,
+        y: 60,
+
+        ease: "ease-in",
+
+        scrollTrigger: {
+          id: `section-${i + 1}`,
+          trigger: e,
+          start: "top 50%",
+          end: "bottom 60%",
+          toggleActions: "play none none reverse",
+          // markers: true,
+        },
+      });
+    });
+
+    // gsap.from(imgRef.current, {
+    //   duration: 2,
+    //   y: "100",
+    //   opacity: 0,
+    //   ease: "ease-in",
+    //   scrollTrigger: {
+    //     trigger: imgRef.current,
+    //     start: "top 90%",
+    //     end: "bottom 60%",
+    //     toggleActions: "restart complete complete reset",
+    //   },
+    // });
+    // t1.from(infoRef.current, {
+    //   y: 100,
+    //   repeat: -1,
+    //   repeatDelay: 1,
+    //   yoyo: true,
+    // }).from(imgRef.current, {
+    //   y: 100,
+    //   repeat: -1,
+    //   repeatDelay: 1,
+    //   yoyo: true,
+    // });
+  }, []);
+
+  const addToRefs = (e) => {
+    console.log(e);
+    if (e !== null && e && !revealRefs.current.includes(e)) {
+      console.log("PUSHING" + e);
+      revealRefs.current.push(e);
+    }
+    console.log(revealRefs.current);
+  };
+
   return (
-    <ProjectsContainer>
-      <ProjectsImage src={props.project.images}></ProjectsImage>
-      <ProjectsInfo>
-        <a href={props.project.deployed_url}>
-          {" "}
-          <ProjectsTitle>{props.project.title}</ProjectsTitle>
-        </a>
-        <ProjectsHeadline>{props.project.headline}</ProjectsHeadline>
-        <ProjectsDetail>- {props.project.desc}</ProjectsDetail>
-        {/* <ProjectSite src={web} /> */}
-        <a href={props.project.github}>
-          <ProjectsButton>Show Github Repo</ProjectsButton>
-        </a>
+    <ProjectsContainer className="content" id="work">
+      <InfoHeading ref={imgRef}>02. Work</InfoHeading>
+      <InfoDetail>Here is some of the Projects I have done so far!</InfoDetail>
+      <br />
+      <br />
+      {projects.map((e, i) => (
+        <ProjectContainer key={e} className="content-main" ref={addToRefs}>
+          <ProjectsImage ref={imgRef} src={e.images}></ProjectsImage>
+          <ProjectsInfo ref={infoRef}>
+            <a href={e.deployed_url}>
+              {" "}
+              <ProjectsTitle>
+                {e.title} <FaEye />
+              </ProjectsTitle>
+            </a>
+            <ProjectsHeadline>{e.headline}</ProjectsHeadline>
+            <ProjectsDetail>- {e.desc}</ProjectsDetail>
+            {/* <ProjectSite src={web} /> */}
+            <a href={e.github}>
+              <ProjectsButton>Show Github Repo ></ProjectsButton>
+            </a>
 
-        <ProjectsTechs>
-          {props.project.tech.map((e) => (
-            <p>{e}</p>
-          ))}
-        </ProjectsTechs>
-      </ProjectsInfo>
+            <ProjectsTechs>
+              <p>•</p>
+              {e.tech.map((i) => (
+                <p>{i} •</p>
+              ))}
+            </ProjectsTechs>
+          </ProjectsInfo>
+        </ProjectContainer>
+      ))}
     </ProjectsContainer>
   );
 };
 
-export default index;
+export default Projects;

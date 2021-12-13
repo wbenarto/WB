@@ -2,24 +2,29 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
   width: 100%;
-  height: 200px;
-  position: relative;
+  height: 100px;
+  position: absolute;
+  margin-bottom: 0px;
+  left: 0;
   display: flex;
   flex-direction: row;
-
+  align-items: center;
+  background-color: #2298a3;
+  scroll-snap-align: start;
   @media screen and (max-width: 475px) {
     height: 50px;
-    /* background-color: teal; */
   }
 `;
 
 export const FooterInfo = styled.div`
-  width: 260px;
+  width: 35%;
   height: 50px;
   font-size: 20px;
   font-family: "Roboto Mono";
-  margin: 80px 80px;
-
+  color: white;
+  margin: 0px 60px;
+  overflow-wrap: break-word;
+  /* background-color: purple; */
   @media screen and (max-width: 475px) {
     margin: 0;
     width: 100%;
@@ -28,7 +33,7 @@ export const FooterInfo = styled.div`
 `;
 
 export const FooterIcons = styled.div`
-  width: 120px;
+  max-width: 30%;
   height: 50px;
   display: flex;
   justify-content: flex-end;
@@ -36,10 +41,11 @@ export const FooterIcons = styled.div`
   /* background-color: yellow; */
   flex-grow: 2;
   align-items: center;
-  margin: 80px 80px;
+
+  margin-right: 60px;
   @media screen and (max-width: 475px) {
     flex: 1;
-    margin: 0;
+    margin-right: 0px;
   }
 `;
 
@@ -47,7 +53,7 @@ export const FooterIcon = styled.a`
   width: 50px;
   height: 50px;
   font-size: 2rem;
-  color: black;
+  color: white;
   padding: 5px;
   @media screen and (max-width: 475px) {
     font-size: 1rem;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 import {
@@ -10,11 +10,25 @@ import {
   ResumeButton,
   Transition,
 } from "./NavbarElements";
+import { gsap } from "gsap";
+import Power3 from'gsap'
 
 const Navbar = (props) => {
   const [scrollDown, setScrollDown] = useState(false);
 
   let lastScrollTop = 0;
+
+  let t2 = gsap.timeline();
+
+  useEffect(()=>{
+    t2.from(".navLink",{
+      duration: 1,
+      opacity: 0,
+      y: -800,
+      ease: 'ease-in',
+    })
+  }
+  , [])
 
   const handleScroll = () => {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -39,10 +53,10 @@ const Navbar = (props) => {
     <Transition>
       <NavbarContainer className={scrollDown ? "active" : "hidden"}>
         <Link to="/" onClick={toggleHome}>
-          <NavbarLogo>WB</NavbarLogo>
+          <NavbarLogo className='navLink'>WB</NavbarLogo>
         </Link>
 
-        <NavLinks>
+        <NavLinks >
           <NavLink
             to="information"
             smooth={true}
@@ -50,8 +64,9 @@ const Navbar = (props) => {
             spy={true}
             exact="true"
             offset={-60}
+            
           >
-            <NavbarItem>01. About</NavbarItem>
+            <NavbarItem className='navLink'>01. About</NavbarItem>
           </NavLink>
 
           <NavLink
@@ -61,8 +76,9 @@ const Navbar = (props) => {
             spy={true}
             exact="true"
             offset={-60}
+            
           >
-            <NavbarItem>02. Work</NavbarItem>
+            <NavbarItem className='navLink'>02. Work</NavbarItem>
           </NavLink>
 
           <NavLink
@@ -72,14 +88,16 @@ const Navbar = (props) => {
             spy={true}
             exact="true"
             // offset={80}
+            
           >
-            <NavbarItem>03. Contact</NavbarItem>
+            <NavbarItem className='navLink'>03. Contact</NavbarItem>
           </NavLink>
         </NavLinks>
         <ResumeButton
-          href="https://drive.google.com/file/d/1W9Gy3TF4XhgUQlis3_w9KvTQ9UrfR8kG/view?usp=sharing"
+          href="https://drive.google.com/file/d/1redEHk-1iQAq5i90RhiwhAJrv5yq54Ie/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
+          className='navLink'
         >
           Resume
         </ResumeButton>

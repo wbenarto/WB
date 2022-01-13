@@ -34,7 +34,7 @@ export const projects = [
     tech: ["HTML", "SCSS", "Typescript", "React", "Next.js", "Framer Motion"],
     images: jin,
     github: "https://github.com/wbenarto/jin",
-    deployed_url: "https://jinphoto.vercel.app/",
+    deployed_url: "https://jin-six.vercel.app/",
   },
   {
     title: "Spotify Clone",

@@ -111,7 +111,7 @@ const Information = () => {
               <p>CSS</p>
               <p>JavaScript</p>
               <p>Python</p>
-              <p>TypeScript</p>
+          
             </InfoLanguages>
 
             <InfoLanguages>

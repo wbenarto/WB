@@ -36,8 +36,8 @@ export const InfoHeader = styled.div`
 
 export const InfoHeaderImage = styled.img`
   margin-top: 20px;
-  width: 60%;
-  border-radius: 20px;
+  width: 80%;
+
 
   @media screen and (max-width: 475px) {
     width: 100%;

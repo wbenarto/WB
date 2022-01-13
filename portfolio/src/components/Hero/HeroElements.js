@@ -11,6 +11,7 @@ export const HeroContainer = styled.div`
   margin: auto;
   padding: 140px 0px;
   border-bottom: 1px solid black;
+
   /* scroll-snap-align: start; */
   /* animation: darkLight 8s; */
 

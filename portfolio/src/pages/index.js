@@ -5,10 +5,11 @@ import Information from "../components/Information";
 import ProjectComponent from "../components/Projects/index";
 import Navbar from "../components/Navbar/Navbar";
 import { projects } from "../data/projects_data";
+import background from '../assets/projects/webb.png'
 
 const index = () => {
   return (
-    <div>
+    <div style={{backgroundImage:`url(${background})`,backgroundAttachment:'fixed'}}>
       <Navbar />
       <Hero id="/" />
       <Information />

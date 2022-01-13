@@ -1,12 +1,11 @@
 import styled from "styled-components";
+
 export const ProjectsContainer = styled.div`
   max-width: 900px;
   width: 80%;
-  /* background-color: pink; */
   margin: auto;
   display: flex;
   flex-direction: column;
-  /* scroll-snap-type: y mandatory; */
 `;
 
 export const ProjectContainer = styled.div`
@@ -16,7 +15,6 @@ export const ProjectContainer = styled.div`
   min-height: 800px;
   width: 100%;
   opacity: 1;
-  /* background-color: teal; */
   flex-direction: row;
   display: flex;
   position: relative;
@@ -24,8 +22,6 @@ export const ProjectContainer = styled.div`
   margin: auto;
   margin-bottom: 40px;
   padding: 80px 0px;
-  /* scroll-snap-type: y mandatory;
-  scroll-snap-align: start; */
 
   @media screen and (max-width: 475px) {
     width: 100%;
@@ -41,18 +37,12 @@ export const ProjectsImage = styled.img`
   min-width: 40%;
   max-height: 400px;
   object-fit: contain;
-
-  /* background-color: lightblue; */
   display: flex;
   position: absolute;
   left: 0;
   top: 0;
 
-  &:hover {
-    z-index: 4;
-    transition: all 0.2s ease-in-out;
-    transform: scale(1.2);
-  }
+  
   @media screen and (max-width: 475px) {
     position: relative;
     margin-left: 0px;
@@ -65,21 +55,16 @@ export const ProjectsImage = styled.img`
 export const ProjectsInfo = styled.div`
   width: 60%;
   min-height: 400px;
-  /* background-color: #0298a3; */
   background-color: rgba(245, 245, 245, 0.9);
   display: flex;
   position: absolute;
   align-items: flex-end;
   justify-content: space-between;
-
   padding: 40px;
   border-radius: 5px;
-
   flex-direction: column;
   top: 10;
   right: 0;
-
-  /* margin: 40px 80px 80px 80px; */
 
   > a {
     text-decoration: none;

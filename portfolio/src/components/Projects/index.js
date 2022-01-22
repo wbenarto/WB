@@ -39,37 +39,14 @@ const Projects = (props) => {
         scrollTrigger: {
           id: `section-${i + 1}`,
           trigger: e,
-          start: "top 50%",
-          end: "bottom 60%",
+          start: "top 60%",
+          end: "bottom 30% ",
           toggleActions: "play none none reverse",
           // markers: true,
         },
       });
     });
 
-    // gsap.from(imgRef.current, {
-    //   duration: 2,
-    //   y: "100",
-    //   opacity: 0,
-    //   ease: "ease-in",
-    //   scrollTrigger: {
-    //     trigger: imgRef.current,
-    //     start: "top 90%",
-    //     end: "bottom 60%",
-    //     toggleActions: "restart complete complete reset",
-    //   },
-    // });
-    // t1.from(infoRef.current, {
-    //   y: 100,
-    //   repeat: -1,
-    //   repeatDelay: 1,
-    //   yoyo: true,
-    // }).from(imgRef.current, {
-    //   y: 100,
-    //   repeat: -1,
-    //   repeatDelay: 1,
-    //   yoyo: true,
-    // });
   }, []);
 
   const addToRefs = (e) => {
@@ -85,8 +62,7 @@ const Projects = (props) => {
     <ProjectsContainer className="content" id="work">
       <InfoHeading ref={imgRef}>02. Work</InfoHeading>
       <InfoDetail>Here is some of the Projects I have done so far!</InfoDetail>
-      <br />
-      <br />
+
       {projects.map((e, i) => (
         <ProjectContainer key={e} className="content-main" ref={addToRefs}>
           <ProjectsImage ref={imgRef} src={e.images}></ProjectsImage>

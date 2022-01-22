@@ -18,14 +18,15 @@ const Navbar = (props) => {
 
   let lastScrollTop = 0;
 
-  let t2 = gsap.timeline();
+  let t1 = gsap.timeline();
 
   useEffect(()=>{
-    t2.from(".navLink",{
+    t1.from(".navLink",{
       duration: 1,
       opacity: 0,
       y: -800,
       ease: 'ease-in',
+      stagger: .1
     })
   }
   , [])

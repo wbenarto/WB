@@ -14,7 +14,6 @@ export const ProjectContainer = styled.div`
   max-height: 100vh;
   min-height: 800px;
   width: 100%;
-  opacity: 1;
   flex-direction: row;
   display: flex;
   position: relative;
@@ -25,11 +24,11 @@ export const ProjectContainer = styled.div`
 
   @media screen and (max-width: 475px) {
     width: 100%;
-    height: 100%;
+    min-height: 700px;
+
     flex-direction: column;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 0px;
+    margin: 0;
+    padding: 0;
   }
 `;
 
@@ -41,14 +40,11 @@ export const ProjectsImage = styled.img`
   position: absolute;
   left: 0;
   top: 0;
-
   
   @media screen and (max-width: 475px) {
     position: relative;
-    margin-left: 0px;
-    margin-top: 20px;
-    width: 90%;
-    height: 200px;
+    max-height: 100%;
+    width: 100%;
   }
 `;
 
@@ -76,7 +72,7 @@ export const ProjectsInfo = styled.div`
     margin: 0px 0px 0px 0px;
     height: 100%;
     width: 100%;
-    padding: 10px;
+    padding: 0px;
   }
 `;
 

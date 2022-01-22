@@ -9,7 +9,7 @@ import background from '../assets/projects/webb.png'
 
 const index = () => {
   return (
-    <div style={{backgroundImage:`url(${background})`,backgroundAttachment:'fixed'}}>
+    <div style={{backgroundImage:`url(${background})`,margin: '0',backgroundAttachment:'fixed'}}>
       <Navbar />
       <Hero id="/" />
       <Information />

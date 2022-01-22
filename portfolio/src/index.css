@@ -1,11 +1,8 @@
-body,
+
 html {
   /* background-image: linear-gradient(to top right, #000046, #1cb5e0); */
-  background-attachment: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
 
+left: 0;
   /* scroll-snap-type: y proximity; */
 
   /* color: #354538; */

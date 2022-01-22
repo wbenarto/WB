@@ -14,49 +14,51 @@ const Hero = () => {
 
   const nameRef = useRef();
   const jobRef = useRef();
+
   useEffect(() => {
-    t1.from('.container', {
-      duration: 1.5,
-      opacity: 0,
+    t1.from(".first", {
+      duration: 1,
+      opacity:0,
+      y: 50,
       ease: 'ease-in',
-      y: -800,
-    }).from(nameRef.current, {
-      duration: 1,
+      stagger: 0.5,
+      delay: 1.5
+
+    }).from('.hero', {
+      duration: .5,
       opacity: 0,
-
       ease: "ease-in",
-
-      x: -100, //normal value
-      y: function (index, target, targets) {
-        //function-based value
-        return index * 50;
-      },
-    }).from(jobRef.current, {
-      duration: 1,
-
-      opacity: 0,
-
-      ease: "ease-in",
-
-      x: -100, //normal value
-      y: function (index, target, targets) {
-        //function-based value
-        return index * 50;
-      },
-    });
+      y: 30, //normal value
+      stagger: .3
+    })
   }, []);
 
   return (
     <>
       <HeroContainer className='container'>
-        <HeroTitle>
-          <p class="first">Hi, my name is</p>
-          <span ref={nameRef} class="name">
-            William Benarto.
-          </span>
-          {/* <br /> */}
-          I'm a <span ref={jobRef}>Front-End Software Engineer</span> in San
-          Francisco Bay Area!
+        <HeroTitle >
+          <div>
+          <p class='hero'>
+            Hi, my name is
+          </p>
+          </div>
+          <div>
+          <p class='hero big-heading'>
+            William Benarto
+          </p>
+          </div>
+
+          <p class='hero'>I'm a </p>
+
+          <div>
+          <p class='hero big-heading heading2'>
+            Front-End Software Engineer
+          </p>
+          </div>
+         <div><p class='hero city'>
+            in San Francisco Bay Area!
+          </p></div>
+          
         </HeroTitle>
       </HeroContainer>
     </>

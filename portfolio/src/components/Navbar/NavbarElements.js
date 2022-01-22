@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 
 export const Transition = styled.div`
-  width: 100vw;
+  width: 100%;
 
   .active {
     visibility: visible;
@@ -18,7 +18,7 @@ export const Transition = styled.div`
 export const NavbarContainer = styled.div`
   width: 100%;
   margin: auto;
-  height: 7vh;
+  height: 9vh;
   top: 0;
   display: flex;
   flex-direction: row;
@@ -32,11 +32,13 @@ export const NavbarContainer = styled.div`
   }
 
   @media screen and (max-width: 475px) {
-    width: 85vw;
+    width: 90%;
     height: 7vh;
     top: 0;
     left: 0;
     right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     /* margin-top: 20px; */
   }
 `;
@@ -130,7 +132,7 @@ export const ResumeButton = styled.a`
   font-family: "Roboto Mono";
   font-size: 18px;
   width: 100px;
-  height: 100%;
+  height: 80%;
   justify-content: center;
   align-items: center;
   text-decoration: none;

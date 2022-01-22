@@ -66,8 +66,12 @@ export const InfoHeading = styled.p`
 
   @media screen and (max-width: 678px) {
     font-size: 20px;
-    margin-top: 40px;
-    line-height: 2rem;
+    margin-top: 20px;
+    >span {
+      margin-top: 0;
+      line-height: 2rem;
+    }
+
   }
 `;
 
@@ -75,10 +79,14 @@ export const InfoDetail = styled.p`
   margin-top: 60px;
   font-family: "Roboto Mono";
   font-size: 20px;
+  padding: 20px;
+  background-color: rgba(245, 245, 245, 0.9);
 
   @media screen and (max-width: 475px) {
     width: 100%;
     font-size: 14px;
+    margin-top: 20px;
+    padding: 0;
   }
 `;
 
@@ -110,6 +118,7 @@ export const InfoSkills = styled.div`
 
   @media screen and (max-width: 678px) {
     margin-top: 20px;
+    margin-bottom: 0;
     font-size: 16px;
     width: 100%;
   }
@@ -124,11 +133,13 @@ export const InfoLanguages = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  
 
   > h1 {
     font-size: 1.5rem;
   }
   > p {
+    background-color: rgba(245, 245, 245, 0.9);
     height: 1.2rem;
     display: flex;
     justify-content: center;

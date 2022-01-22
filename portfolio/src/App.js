@@ -4,6 +4,7 @@ import LandingPage from "./pages/index";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
+import ProjectDetail from './components/Projects/ProjectDetail'
 import {
   BrowserRouter as Router,
   Route,
@@ -28,6 +29,10 @@ function App() {
         <Route exact path="/">
           <LandingPage />
         </Route>
+        <Route exact path="/projects/:id">
+          <ProjectDetail />
+        </Route>
+        
         {/* <Route path="/">
           <Projects />
         </Route> */}

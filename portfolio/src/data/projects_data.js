@@ -10,6 +10,7 @@ import crystal from "../assets/projects/crystalcollector.png";
 
 export const projects = [
   {
+    id: 'projects/webesushi',
     title: "Webesushi.io",
     headline: "One stop for all sushi enthusiasts",
     desc: "A web-app created using React with the mobile-first design approach and Redux for state management through the app. Firebase is being utilized to store information about users, products liked, and user authentication.",
@@ -28,6 +29,7 @@ export const projects = [
     deployed_url: "https://www.webesushi.io",
   },
   {
+    id: 'projects/jinchoi',
     title: "JinChoiVisuals",
     headline: "Photography Portfolio",
     desc: "Single Page Application using Next.js framework incorporating SASS as CSS preprocessor. Using Framer Motion to create animation effects on page load.",
@@ -37,6 +39,7 @@ export const projects = [
     deployed_url: "https://jin-six.vercel.app/",
   },
   {
+    id: 'projects/spotifyclone',
     title: "Spotify Clone",
     headline:
       "Fetch Spotify Playlists + Control Music playback with the Spotify API",
@@ -56,26 +59,8 @@ export const projects = [
     github: "https://github.com/wbenarto/sp-clone",
     deployed_url: "https://sp-clone.vercel.app/",
   },
-
-  // {
-  //   title: "Webe Sushi",
-  //   headline: "E-commerce website for Pick Up and Drop Off sushi orders.",
-  //   desc: "Webe sushi is a Full-stack web application for a Pickup/Togo sushi restaurant featuring sushi made by me.",
-  //   tech: [
-  //     "HTML",
-  //     "CSS",
-  //     "Javascript",
-  //     "React",
-  //     "Redux",
-  //     "Node",
-  //     "Express",
-  //     "MongoDB",
-  //   ],
-  //   images: webe,
-  //   github: "https://github.com/wbenarto/Webe_Sushi",
-  //   deployed_url: "https://polar-cliffs-38995.herokuapp.com/",
-  // },
   {
+    id: 'projects/covid19',
     title: "Covid19 Tracker",
     headline: "Live tracking of Covid19 Data",
     desc: "Utilizing covid.mathdro.id/api to display daily data of covid infection around the world. This app was built using React and is going to fetch the live data from API using Async/Await syntax.",
@@ -85,6 +70,7 @@ export const projects = [
     deployed_url: "https://wbenarto.github.io/COVID19_Tracker/",
   },
   {
+    id:'projects/liri',
     title: "LIRI-Node-App",
     headline: "Any song, movie or concerts",
     desc: "LIRI-node-app allows users to pull up information about a song, a movie, or a concert using Spotify, BandsInTown APIs and OMDb APIs via the appropriate NPM modules. LIRI uses API calls and returned JSON objects, outputting the information into log.txt using node file system.",
@@ -101,6 +87,7 @@ export const projects = [
     deployed_url: "https://youtu.be/jqz086k84K8",
   },
   {
+    id: 'projects/bamazon',
     title: "Bamazon",
     headline: "Sales and inventory management system",
     desc: "Node.js app that allows allows management to add, update and delete inventory using CRUD methodology to update MySql database. Data from MySql then parsed into table-cli to improve clarity.",

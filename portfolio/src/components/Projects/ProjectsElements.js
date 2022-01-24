@@ -174,6 +174,7 @@ export const ProjectsButton = styled.div`
   border-radius: 20px;
   padding: 5px;
   right: 0;
+  margin: 20px 0;
   > a {
     text-decoration: none;
     color: black;

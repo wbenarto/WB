@@ -76,6 +76,9 @@ const Projects = (props) => {
             <ProjectsHeadline>{e.headline}</ProjectsHeadline>
             <ProjectsDetail>- {e.desc}</ProjectsDetail>
             {/* <ProjectSite src={web} /> */}
+            <a href={e.id}>
+              <ProjectsButton>Show Project Page ></ProjectsButton>
+            </a>
             <a href={e.github}>
               <ProjectsButton>Show Github Repo ></ProjectsButton>
             </a>

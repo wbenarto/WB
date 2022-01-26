@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const HeroContainer = styled.div`
   width: 900px;
   max-width: 80vw;
@@ -106,6 +107,59 @@ export const HeroDesc = styled.div`
     }
   }
 `;
+
+export const WidgetButton = styled.div`
+  width: 50px;
+  height: 50px;
+
+  position: fixed;
+  border: 2px solid black;
+  background-color: #2298a3;
+  border-radius: 50%;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  right: 50px;
+
+  @media screen and (max-width: 475px) {
+    right: 20px;
+    width: 25px;
+    height: 25px;
+
+  }
+`
+
+export const WidgetIcon = styled.img`
+  width: 100%;
+  height: 100%;
+`
+
+export const Widget = styled.iframe`
+        position: fixed;
+        display: ${({show}) => show ? 'flex' : 'none' };
+        bottom: 80px;
+        right: 50px;
+        width: 400px;
+        height: 550px;
+
+        transition: all 0.4s ease 0s;
+        transition-property: all;
+        transition-duration: 0.4s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+
+        @media screen and (max-width: 475px) {
+          /* width: 50%;
+          height: 50%; */
+          right: 0;
+          width: 80%;
+          > html {
+            transform: scale(0.5)
+          }
+        }
+        
+`
 
 // export const HeroDescIcon = styled.div`
 //   background-image: require(url(${FaExpand}));

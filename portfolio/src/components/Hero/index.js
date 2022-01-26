@@ -4,6 +4,7 @@ import {
   HeroTitle,
   HeroDesc,
   HeroDescIcon,
+  Widget
 } from "./HeroElements";
 import { gsap } from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";

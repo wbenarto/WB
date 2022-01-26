@@ -1,11 +1,16 @@
-
 html {
-  /* background-image: linear-gradient(to top right, #000046, #1cb5e0); */
-
-left: 0;
+ 
+  left: 0;
   /* scroll-snap-type: y proximity; */
 
   /* color: #354538; */
+}
+
+body { 
+  background-image: url('./assets/projects/webb.png');
+  background-attachment: fixed;
+  margin: 0;
+
 }
 
 ::-webkit-scrollbar {

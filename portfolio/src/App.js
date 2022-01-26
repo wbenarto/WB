@@ -1,5 +1,5 @@
 import React from "react";
-import LandingPage from "./pages/index";
+import LandingPage from "./pages/LandingPage";
 import Footer from "./components/Footer";
 import ProjectDetail from './components/Projects/ProjectDetail'
 import {

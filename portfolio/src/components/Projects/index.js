@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   ProjectContainer,
   ProjectsContainer,
@@ -9,6 +10,7 @@ import {
   ProjectsDetail,
   ProjectsButton,
   ProjectsTechs,
+  ProjectTech,
   ProjectSite,
 } from "./ProjectsElements";
 import { InfoDetail, InfoHeading } from "../Information/InformationComponents";
@@ -40,11 +42,12 @@ const Projects = (props) => {
           id: `section-${i + 1}`,
           trigger: e,
           start: "top 60%",
-          end: "bottom 30% ",
+          end: "bottom 40% ",
           toggleActions: "play none none reverse",
           // markers: true,
         },
       });
+
     });
 
   }, []);
@@ -74,21 +77,22 @@ const Projects = (props) => {
               </ProjectsTitle>
             </a>
             <ProjectsHeadline>{e.headline}</ProjectsHeadline>
-            <ProjectsDetail>- {e.desc}</ProjectsDetail>
+            {/* <ProjectsDetail>- {e.desc}</ProjectsDetail> */}
             {/* <ProjectSite src={web} /> */}
-            <a href={e.id}>
+            <ProjectsTechs>
+              {e.tech.map((i) => (
+                <ProjectTech>{i}</ProjectTech>
+              ))}
+            </ProjectsTechs>
+            
+            <Link to={`projects/${e.id}`}>
               <ProjectsButton>Show Project Page ></ProjectsButton>
-            </a>
+            </Link>
             <a href={e.github}>
               <ProjectsButton>Show Github Repo ></ProjectsButton>
             </a>
 
-            <ProjectsTechs>
-              <p>•</p>
-              {e.tech.map((i) => (
-                <p>{i} •</p>
-              ))}
-            </ProjectsTechs>
+            
           </ProjectsInfo>
         </ProjectContainer>
       ))}

@@ -1,20 +1,24 @@
-import React from 'react'
+import React , {useEffect, useState} from 'react'
 import {useParams, useHistory} from 'react-router-dom'
 import {projects} from '../../data/projects_data'
-import {PDBack, PDContainer, PDImage, PDTitle, PDSubtitle, PDHeadings, PDLinks, PDDesc, PDTech} from './ProjectDetailElements'
+import {PDBack, PDContainer, PDImage, PDTitle, PDSubtitle, PDHeadings, PDLinks, PDDesc, PDTech, PDIaMap} from './ProjectDetailElements'
 
 
 const ProjectDetail = () =>  {
+    const [page , setPage] = useState({})
     const {id} = useParams()
 
-    const data = projects.filter(e => e.id.split('/')[1] === id)
-    console.log(data)
-    console.log(projects)
-    console.log(id)
+    const data = projects.filter(e => e.id === id)
+    
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
+  
     let history = useHistory()
 
     return (
         <PDContainer>
+           
             <PDBack onClick={()=>history.goBack()}>x</PDBack>
             <PDTitle>
             {data[0].title}
@@ -37,6 +41,7 @@ const ProjectDetail = () =>  {
                 {data[0].tech.join(', ')}
             </PDTech>
 
+            <PDIaMap src={data[0].ia_map} />
 
             {/* <PDHeadings>
             SYSTEM DESIGN

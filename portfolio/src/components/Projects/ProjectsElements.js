@@ -1,18 +1,21 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
-  max-width: 900px;
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
+  font-family: "Roboto Mono";
+
+  @media screen and (max-width: 475px) {
+    width: 90%;
+  }
 `;
 
 export const ProjectContainer = styled.div`
   justify-content: space-around;
   align-items: center;
-  max-height: 100vh;
-  min-height: 800px;
+  height: 500px;
   width: 100%;
   flex-direction: row;
   display: flex;
@@ -24,42 +27,42 @@ export const ProjectContainer = styled.div`
 
   @media screen and (max-width: 475px) {
     width: 100%;
-    min-height: 700px;
-
-    flex-direction: column;
-    margin: 0;
     padding: 0;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 0px;
+
   }
 `;
 
 export const ProjectsImage = styled.img`
-  min-width: 40%;
-  max-height: 400px;
-  object-fit: contain;
+  width: 60%;
+  height: 500px;
+  object-fit: cover;
   display: flex;
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
   
   @media screen and (max-width: 475px) {
-    position: relative;
-    max-height: 100%;
     width: 100%;
+    height: 200px;
   }
 `;
 
 export const ProjectsInfo = styled.div`
-  width: 60%;
-  min-height: 400px;
+  width: 40%;
+  min-height: 500px;
+  max-height: 500px;
   background-color: rgba(245, 245, 245, 0.9);
   display: flex;
-  position: absolute;
+  position: relative;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 40px;
   border-radius: 5px;
   flex-direction: column;
-  top: 10;
+  top: 0;
   right: 0;
 
   > a {
@@ -69,10 +72,11 @@ export const ProjectsInfo = styled.div`
 
   @media screen and (max-width: 475px) {
     position: relative;
-    margin: 0px 0px 0px 0px;
-    height: 100%;
+    margin: 0px 0px 10px 0px;
     width: 100%;
+    height: 100%;
     padding: 0px;
+    justify-content: space-evenly;
   }
 `;
 
@@ -87,7 +91,6 @@ export const ProjectsTitle = styled.h1`
 
   @media screen and (max-width: 678px) {
     font-size: 14px;
-    margin-bottom: 20px;
   }
 
   @keyframes wobble-horizontal {
@@ -126,18 +129,19 @@ export const ProjectsTitle = styled.h1`
 
 export const ProjectsHeadline = styled.p`
   font-family: "Roboto";
-  font-size: 32px;
-  color: #4b606b;
-  width: 100%;
-  margin: 20px 0px;
-
-  text-align: left;
-  /* background-color: rgba(0, 0, 0, 0.2); */
+  font-size: 28px;
+  color: white;
+  padding: 15px 10px;
+  margin: 10px 0px;
+  text-align: right;
+  background-color: #0298a3;
 
   @media screen and (max-width: 475px) {
-    margin: 0;
+
+    padding: 10px 0;
     font-size: 24px;
-    text-align: left;
+    text-align: center;
+    width: 100%;
   }
 `;
 
@@ -162,8 +166,8 @@ export const ProjectsDetail = styled.p`
 export const ProjectsButton = styled.div`
   font-family: "Roboto Mono";
   font-size: 20px;
-  width: 100%;
-  height: 40px;
+  padding: 0px 10px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,9 +176,8 @@ export const ProjectsButton = styled.div`
   text-align: center;
   border: 1px black solid;
   border-radius: 20px;
-  padding: 5px;
-  right: 0;
-  margin: 20px 0;
+  background-color: rgba(5, 99, 99, 0.1);
+  
   > a {
     text-decoration: none;
     color: black;
@@ -214,41 +217,47 @@ export const ProjectsButton = styled.div`
   }
 
   @media screen and (max-width: 475px) {
-    margin-top: 40px;
-    font-size: 8px;
 
+    font-size: 8px;
+    margin: 5px 5px;
     padding: 5px;
     height: 20px;
   }
 `;
 
 export const ProjectsTechs = styled.div`
-  width: 100%;
+  max-width: 100%;
   position: relative;
-  bottom: 0;
-  right: 0;
   color: #0298a3;
-  /* background-color: green; */
-  flex-direction: row;
+  justify-content: center;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  overflow-wrap: break-word;
   flex-wrap: wrap;
 
-  > p {
-    font-family: "Roboto Mono";
-    font-size: 1rem;
+  padding: 10px;
 
-    /* background-color: white; */
-    text-align: center;
-
-    @media screen and (max-width: 475px) {
+  @media screen and (max-width: 475px) {
       margin: 0;
       font-size: 0.6rem;
-    }
   }
+  
 `;
+
+export const ProjectTech = styled.p`
+  padding: 5px 15px;
+  min-width: 80px;
+  margin: 5px;
+  text-align: center;
+  overflow: wrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 10px;
+  @media screen and (max-width: 475px) {
+    min-width: 40px;
+
+  }
+`
 
 export const ProjectSite = styled.img`
   width: 50px;

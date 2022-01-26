@@ -129,7 +129,6 @@ const Information = () => {
               <h1>Technologies</h1>
 
               <p>Git</p>
-              <p>Heroku</p>
               <p>MySQL</p>
               <p>MongoDB</p>
               <p>Firebase</p>

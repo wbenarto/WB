@@ -8,20 +8,33 @@ export const PDContainer = styled.div`
     height: 100%;
     align-items: center;
     font-family: "Roboto";
+    animation: transitionIn 1s;
+    
     > a {
         text-decoration: none;
     }
 
+    @keyframes transitionIn {
+        from {
+            opacity: 0;
+            transform: rotateX(-100deg);
+        }
+
+        to {
+            opacity: 1;
+            transform: rotateX(0);
+        }
+    }
 `
 
 export const PDTitle = styled.p`
     font-size: 32px;
-    color: gray;
+    color: #0298a3;
 `
 
 export const PDSubtitle = styled.p`
     font-size: 28px;
-    color: gray;
+    color: #0298a3;
     text-align: center;
 
     @media screen and (max-width: 475px) {
@@ -53,30 +66,39 @@ export const PDDesc = styled.p`
     }
 `
 
-export const PDBack = styled.button`
+export const PDBack = styled.div`
     font-size: 24px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     justify-content: center;
     align-items: center;
     display: flex;
     align-self: center;
     border-radius: 50% 50% 50% 50%;
-    background-color: white;
-    padding: 20px;
+    background-color: gray;
+    color:white;
+    padding: 5px;
     margin: 20px 0;
+    border: 2px solid black;
 
     &:hover{
-        background-color: gray;
-        color: white;
+        background-color: black;
+        color: #0298a3;
         cursor: pointer;
+        
+    }
+
+    @media screen and (max-width: 475px) {
+   
+        width: 20px;
+        height: 20px
     }
 `
 
 export const PDImage = styled.img`
     width: 100%;
     height: 500px;
-    object-fit: contain;
+    object-fit: cover;
 
     @media screen and (max-width: 475px) {
         height: 200px;
@@ -111,4 +133,17 @@ export const PDLinks = styled.div`
         background-color: #0298a3;
         color: white;
     }
+
+    @media screen and (max-width: 475px) {
+        font-size: 14px;
+        margin: 10px;
+        padding: 5px;
+        width: 100px;
+    }
+`
+
+export const PDIaMap = styled.img`
+    width: 100%;
+    height: 100%;
+    
 `

@@ -8,6 +8,8 @@ import spotify from "../assets/projects/spotify.png";
 import clicky from "../assets/projects/clicky.jpg";
 import giphy from "../assets/projects/giphy.png";
 import crystal from "../assets/projects/crystalcollector.png";
+import homemakase from '../assets/projects/homemakase.jpg';
+import ingredients from '../assets/projects/ingredientspage.jpg'
 
 export const projects = [
   {
@@ -28,7 +30,8 @@ export const projects = [
     images: webesushi,
     github: "https://github.com/wbenarto/WB_Landing/tree/master/landing",
     deployed_url: "https://www.webesushi.io",
-    ia_map: webesushiiamap
+    ia_map: webesushiiamap,
+    user_task: [{id:1 , title:'Recipes', img: homemakase}, {id: 2, title: 'Ingridients', img: ingredients}]
   },
   {
     id: 'jinchoi',

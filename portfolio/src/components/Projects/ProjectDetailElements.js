@@ -118,7 +118,7 @@ export const PDTech = styled.p`
 `
 
 export const PDLinks = styled.div`
-    border: 2px solid black;
+    border: 4px solid  #0298a3;
     text-align: center;
     display: flex;
     align-items: center;
@@ -143,7 +143,15 @@ export const PDLinks = styled.div`
 `
 
 export const PDIaMap = styled.img`
+    width: 80%;
+    padding: 10px 0;
+
+    @media screen and (max-width: 475px) {
     width: 100%;
     height: 100%;
+
+        
+    }
+    
     
 `

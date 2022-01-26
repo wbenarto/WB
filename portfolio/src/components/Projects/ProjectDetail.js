@@ -27,6 +27,20 @@ const ProjectDetail = () =>  {
             <PDSubtitle>
             {data[0].headline}
             </PDSubtitle>
+
+            
+            <a href={data[0].github}>
+            <PDLinks>
+               SOURCE CODE
+            </PDLinks>
+            </a>
+
+            <a href={data[0].deployed_url}>
+            <PDLinks>
+               LAUNCH
+            </PDLinks>
+            </a>
+            
             <PDHeadings>
             ABOUT THE PROJECT
             </PDHeadings>
@@ -43,6 +57,19 @@ const ProjectDetail = () =>  {
 
             <PDIaMap src={data[0].ia_map} />
 
+            
+            {data[0].user_task ? (
+                
+                data[0].user_task.map((e, i) => (
+                    <PDIaMap key={e.id} src={e.img} />
+                ) )
+               
+            ) :  (
+                <>
+                </>
+            )}
+            
+
             {/* <PDHeadings>
             SYSTEM DESIGN
             </PDHeadings> */}
@@ -50,17 +77,6 @@ const ProjectDetail = () =>  {
 
 
 
-            <a href={data[0].github}>
-            <PDLinks>
-               SOURCE CODE
-            </PDLinks>
-            </a>
-
-            <a href={data[0].deployed_url}>
-            <PDLinks>
-               LAUNCH
-            </PDLinks>
-            </a>
 
             <PDBack onClick={()=>history.goBack()}>x</PDBack>
         </PDContainer>

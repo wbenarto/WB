@@ -10,6 +10,7 @@ import giphy from "../assets/projects/giphy.png";
 import crystal from "../assets/projects/crystalcollector.png";
 import homemakase from '../assets/projects/homemakase.jpg';
 import ingredients from '../assets/projects/ingredientspage.jpg'
+import travelly from '../assets/projects/travelly.jpg'
 
 export const projects = [
   {
@@ -44,11 +45,21 @@ export const projects = [
     deployed_url: "https://jin-six.vercel.app/",
   },
   {
+    id: 'travelly',
+    title: "TRAVELLY APP",
+    headline: "Travel App at Your Fingertips",
+    desc: "React Application built on top of Next.js framework utilizing Google Maps API and Travel Advisory API. Using Grid components from Material UI to build responsive layout with minimal codes. Google Maps Location asynchronously fetch Travel API to find restaurants, hotels, and attractions bounded by edges of Google Maps in the App.",
+    tech: ["HTML", "CSS", "Javascript", "React", "Next.js", "Material UI", "Google Maps API", "Travel Advisory API"],
+    images: travelly,
+    github: "https://github.com/wbenarto/travel_buddy",
+    deployed_url: "https://travel-buddy-pi.vercel.app/",
+  },
+  {
     id: 'spotifyclone',
     title: "Spotify Clone",
     headline:
       "Fetch Spotify Playlists + Control Music playback with the Spotify API",
-    desc: "Spotify clone built in Next.js that allows user to fetch playlists and control media playback using Spotify API. NextAuth to persist user's logged in state and refresh oAuth JWT tokens. Tailwind CSS is utilized to build reusable components that are fully responsive. Next.js 12 Middleware used to handle authenticated user access. Recoil library is used for state management in the spotify clone app.",
+    desc: "Spotify clone built in Next.js that allows user to fetch playlists and control media playback using Spotify API. NextAuth to persist user's logged in state and refresh oAuth JWT tokens. Tailwind CSS is utilized to build reusable components that are fully responsive. Next.js 12 Middleware used to handle authenticated user access. Recoil library is used for state management in the spotify clone app. User able to filter places based on review ratings in Travel Advisory.",
     tech: [
       "HTML",
       "CSS",

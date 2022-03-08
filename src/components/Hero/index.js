@@ -38,7 +38,7 @@ const Hero = () => {
     <>
       <HeroContainer className='container'>
         <HeroTitle >
-          <div>
+          {/* <div>
           <p class='hero'>
             Hi, my name is
           </p>
@@ -58,7 +58,7 @@ const Hero = () => {
           </div>
          <div><p class='hero city'>
             in San Francisco Bay Area!
-          </p></div>
+          </p></div> */}
           
         </HeroTitle>
       </HeroContainer>

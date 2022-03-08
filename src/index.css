@@ -7,7 +7,7 @@ html {
 }
 
 body { 
-  background-image: url('./assets/projects/webb.png');
+  /* background-image: url('./assets/projects/webb.png'); */
   background-attachment: fixed;
   margin: 0;
 

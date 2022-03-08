@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
-  width: 90%;
+  width: 900px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -15,8 +15,9 @@ export const ProjectsContainer = styled.div`
 export const ProjectContainer = styled.div`
   justify-content: space-around;
   align-items: center;
-  height: 500px;
+  height: 100%;
   width: 100%;
+  max-width: 900px;
   flex-direction: row;
   display: flex;
   position: relative;
@@ -38,7 +39,7 @@ export const ProjectContainer = styled.div`
 
 export const ProjectsImage = styled.img`
   width: 60%;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
   display: flex;
   position: relative;
@@ -53,17 +54,17 @@ export const ProjectsImage = styled.img`
 
 export const ProjectsInfo = styled.div`
   width: 40%;
-  min-height: 500px;
-  max-height: 500px;
+  height: 100%;
   background-color: rgba(245, 245, 245, 0.9);
   display: flex;
   position: relative;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-between;
   border-radius: 5px;
   flex-direction: column;
   top: 0;
-  right: 0;
+  padding: 5px 15px;
+  
 
   > a {
     text-decoration: none;

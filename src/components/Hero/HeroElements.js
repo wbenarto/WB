@@ -2,29 +2,28 @@ import styled from "styled-components";
 
 
 export const HeroContainer = styled.div`
-  width: 900px;
-  max-width: 80vw;
+
   /* min-height: 100%;*/
-  /* background-color: blue; */
+  background-color: blue;
   position: relative;
   display: flex;
-  height: 100vh;
+
   margin: auto;
-  padding: 140px 0px;
+  /* padding: 140px 0px; */
   border-bottom: 1px solid black;
 
-  @media screen and (max-width: 678px) {
+  /* @media screen and (max-width: 678px) {
     max-width: 80vw;
     margin-top: 40px;
     padding: 20px 0px;
-  }
+  } */
 `;
 
 export const HeroTitle = styled.div`
   margin-top: 50px;
   font-size: 50px;
   font-family: "Roboto";
-  width: 90%;
+
   text-align: left;
  
   >div {
@@ -52,12 +51,12 @@ export const HeroTitle = styled.div`
     font-size: 38px;
   }
 
-  @media screen and (max-width: 678px) {
+  /* @media screen and (max-width: 678px) {
     font-size: 20px;
     margin-top: 10%;
     line-height: 2rem;
-  }
-
+  } */
+/* 
   @media screen and (max-width: 475px) {
     margin-top: 250px;
     p {
@@ -71,7 +70,7 @@ export const HeroTitle = styled.div`
     .city {
       font-size: 20px;
     }
-  }
+  } */
 `;
 
 export const HeroDesc = styled.div`
@@ -99,12 +98,12 @@ export const HeroDesc = styled.div`
     padding: 0 20px;
     margin: 0 20px;
 
-    @media screen and (max-width: 475px) {
+    /* @media screen and (max-width: 475px) {
       font-size: 8px;
       width: 100%;
       height: 20px;
       padding: 0;
-    }
+    } */
   }
 `;
 

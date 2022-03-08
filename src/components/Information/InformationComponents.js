@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const InformationContainer = styled.div`
-  max-width: 900px;
-  width: 90%;
+  /* max-width: 900px; */
+  /* width: 90%; */
   height: 100%;
   /* background-color: teal; */
   margin-top: 80px;
@@ -13,9 +13,9 @@ export const InformationContainer = styled.div`
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid black;
-  @media screen and (max-width: 475px) {
+  /* @media screen and (max-width: 475px) {
     max-width: 85vw;
-  }
+  } */
 `;
 
 export const InfoHeader = styled.div`
@@ -27,11 +27,11 @@ export const InfoHeader = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 475px) {
+  /* @media screen and (max-width: 475px) {
     margin-top: 0px;
     width: 90%;
     height: 600px;
-  }
+  } */
 `;
 
 export const InfoHeaderImage = styled.img`
@@ -39,10 +39,10 @@ export const InfoHeaderImage = styled.img`
   width: 80%;
 
 
-  @media screen and (max-width: 475px) {
+  /* @media screen and (max-width: 475px) {
     width: 100%;
     margin-top: 20px;
-  }
+  } */
 `;
 
 export const InfoHeading = styled.p`
@@ -64,13 +64,13 @@ export const InfoHeading = styled.p`
     justify-content: center;
   }
 
-  @media screen and (max-width: 678px) {
+  /* @media screen and (max-width: 678px) {
     font-size: 20px;
     margin-top: 20px;
     >span {
       margin-top: 0;
       line-height: 2rem;
-    }
+    } */
 
   }
 `;
@@ -80,7 +80,7 @@ export const InfoDetail = styled.p`
   font-family: "Roboto Mono";
   font-size: 20px;
   padding: 20px;
-  background-color: rgba(245, 245, 245, 0.9);
+  /* background-color: rgba(245, 245, 245, 0.9); */
 
   @media screen and (max-width: 475px) {
     width: 100%;

@@ -35,21 +35,21 @@ const LandingPage = () => {
   return (
       <div>
       {loading? 
-      <div style={{display:'flex', justifyContent: 'center', alignItems:'center',height: '100vh',width: '100%', margin:'0 auto', backgroundColor:'#556682'}}>
+      <div style={{display:'flex', justifyContent: 'center', alignItems:'center',height: '100vh',width: '100%', margin:'0 auto', backgroundColor:'#222326'}}>
       
 
       <PacmanLoader 
       size={30} 
-      color={'#2298a3'}
+      color={'#8ae1eb'}
       loading={loading}
     
       />
       </div>
       : (
         <div>
-        <Navbar />
-         <Hero id="/" />
-         <Information />
+        {/* <Navbar /> */}
+         {/* <Hero id="/" />
+         <Information /> */}
          <ProjectComponent layout="normal" />
          {/* {projects.map((e) => (
            <ProjectComponent project={e} layout="normal" />

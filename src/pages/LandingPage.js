@@ -54,14 +54,14 @@ const LandingPage = () => {
          {/* {projects.map((e) => (
            <ProjectComponent project={e} layout="normal" />
          ))} */}
-         <Contact />
+         {/* <Contact />
          <WidgetButton onClick={()=>toggleWidget()}>
            {widget ? (<FaAngleDown style={{width: '100%', height: '100%'}}/>) : (<WidgetIcon src={coffeecup}></WidgetIcon>)}
          
          </WidgetButton>
          <Widget show={widget} title="Inline Frame Example"
            src="https://www.buymeacoffee.com/widget/page/wbenarto?description=100%25%20of%20all%20proceeds%20go%20to%20charity%20%F0%9F%98%87&color=%23FF5F5F"></Widget>
-         <Footer />
+         <Footer /> */}
         </div>
          
       )}

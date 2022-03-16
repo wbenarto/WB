@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InformationContainer = styled.div`
-  /* max-width: 900px; */
+  max-width: 900px;
   /* width: 90%; */
   height: 100%;
   /* background-color: teal; */
@@ -70,9 +70,9 @@ export const InfoHeading = styled.p`
     >span {
       margin-top: 0;
       line-height: 2rem;
-    } */
+    }
 
-  }
+  } */
 `;
 
 export const InfoDetail = styled.p`
@@ -80,6 +80,7 @@ export const InfoDetail = styled.p`
   font-family: "Roboto Mono";
   font-size: 20px;
   padding: 20px;
+  color: white;
   /* background-color: rgba(245, 245, 245, 0.9); */
 
   @media screen and (max-width: 475px) {
@@ -116,6 +117,8 @@ export const InfoSkills = styled.div`
   font-family: "Roboto Mono";
   font-size: 20px;
 
+
+
   @media screen and (max-width: 678px) {
     margin-top: 20px;
     margin-bottom: 0;
@@ -137,6 +140,7 @@ export const InfoLanguages = styled.div`
 
   > h1 {
     font-size: 1.5rem;
+    color: white;
   }
   > p {
     background-color: rgba(245, 245, 245, 0.9);

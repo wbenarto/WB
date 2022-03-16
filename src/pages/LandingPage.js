@@ -20,7 +20,7 @@ const LandingPage = () => {
     setLoading(true)
     setTimeout(()=>{
       setLoading(false)
-    }, 4000)
+    }, 2000)
   }, [])
   const [widget, setWidget] = useState(false)
 
@@ -47,10 +47,10 @@ const LandingPage = () => {
       </div>
       : (
         <div>
-        {/* <Navbar /> */}
-         {/* <Hero id="/" />
-         <Information /> */}
-         <ProjectComponent layout="normal" />
+        <Navbar />
+         <Hero id="/" />
+         <Information />
+         {/* <ProjectComponent layout="normal" /> */}
          {/* {projects.map((e) => (
            <ProjectComponent project={e} layout="normal" />
          ))} */}

@@ -26,7 +26,7 @@ export const NavbarContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   z-index: 1;
-  background-color: white;
+  background-color: #222326;
   > a {
     text-decoration: none;
   }
@@ -105,7 +105,7 @@ export const NavbarItem = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  color: black;
+  color: white;
   font-family: "Roboto Mono";
   font-size: 1.3rem;
   align-items: center;

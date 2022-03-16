@@ -2,21 +2,21 @@ import styled from "styled-components";
 
 
 export const HeroContainer = styled.div`
-
-  /* min-height: 100%;*/
-  background-color: blue;
+  width: 900px;
+  min-height: 100vh;
+  /* background-color: blue; */
   position: relative;
   display: flex;
-
+  justify-content: center;
+  align-items: center;
   margin: auto;
   /* padding: 140px 0px; */
   border-bottom: 1px solid black;
 
-  /* @media screen and (max-width: 678px) {
+  @media screen and (max-width: 678px) {
     max-width: 80vw;
-    margin-top: 40px;
-    padding: 20px 0px;
-  } */
+
+  } 
 `;
 
 export const HeroTitle = styled.div`
@@ -44,7 +44,7 @@ export const HeroTitle = styled.div`
 
   p {
     font-size: 24px;
-    color: black;
+    color: white;
     margin: 10px 0;
   }
   .city {
@@ -56,9 +56,9 @@ export const HeroTitle = styled.div`
     margin-top: 10%;
     line-height: 2rem;
   } */
-/* 
+
   @media screen and (max-width: 475px) {
-    margin-top: 250px;
+
     p {
       font-size: 18px;
       margin: 0;
@@ -70,7 +70,7 @@ export const HeroTitle = styled.div`
     .city {
       font-size: 20px;
     }
-  } */
+  }
 `;
 
 export const HeroDesc = styled.div`
@@ -98,12 +98,12 @@ export const HeroDesc = styled.div`
     padding: 0 20px;
     margin: 0 20px;
 
-    /* @media screen and (max-width: 475px) {
+    @media screen and (max-width: 475px) {
       font-size: 8px;
       width: 100%;
       height: 20px;
       padding: 0;
-    } */
+    } 
   }
 `;
 

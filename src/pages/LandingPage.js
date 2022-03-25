@@ -50,7 +50,7 @@ const LandingPage = () => {
         <Navbar />
          <Hero id="/" />
          <Information />
-         {/* <ProjectComponent layout="normal" /> */}
+         <ProjectComponent layout="normal" />
          {/* {projects.map((e) => (
            <ProjectComponent project={e} layout="normal" />
          ))} */}

@@ -13,7 +13,7 @@ export const HeroContainer = styled.div`
   /* padding: 140px 0px; */
   border-bottom: 1px solid black;
 
-  @media screen and (max-width: 678px) {
+  @media screen and (max-width: 965px) {
     max-width: 80vw;
 
   } 

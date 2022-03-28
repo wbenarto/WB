@@ -16,8 +16,9 @@ export const Transition = styled.div`
 `;
 
 export const NavbarContainer = styled.div`
-  width: 100%;
+  width: 90%;
   margin: auto;
+  min-height: 40px;
   height: 9vh;
   top: 0;
   display: flex;
@@ -26,12 +27,14 @@ export const NavbarContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   z-index: 1;
+
+  padding: 0px 5% 0px 5%;
   background-color: #222326;
   > a {
     text-decoration: none;
   }
 
-  @media screen and (max-width: 475px) {
+  @media screen and (max-width: 965px) {
     width: 90%;
     height: 7vh;
     top: 0;
@@ -44,15 +47,17 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavbarLogo = styled.div`
-  height: 4vh;
+  height: 1rem;
+  width: 1rem;
   position: relative;
   display: flex;
   color: #13a8bf;
   margin-left: 80px;
+  justify-content: center;
 
   /* background-color: green; */
   font-family: "Roboto";
-  font-size: 26px;
+  font-size: 1rem;
   align-items: center;
   text-decoration: none;
   border: 2px solid #13a8bf;
@@ -70,7 +75,7 @@ export const NavLinks = styled.div`
   height: 100%;
   /* background-color: red; */
   display: flex;
-
+  padding: 0 15px 0 15px;
   position: relative;
   flex-direction: row;
   justify-content: space-between;
@@ -107,7 +112,7 @@ export const NavbarItem = styled.div`
   display: flex;
   color: white;
   font-family: "Roboto Mono";
-  font-size: 1.3rem;
+  font-size: 1rem;
   align-items: center;
   justify-content: flex-end;
   transition: 1s;
@@ -130,9 +135,9 @@ export const NavbarItem = styled.div`
 
 export const ResumeButton = styled.a`
   font-family: "Roboto Mono";
-  font-size: 18px;
+  font-size: 1rem;
   width: 100px;
-  height: 80%;
+  height: 3rem;
   justify-content: center;
   align-items: center;
   text-decoration: none;
